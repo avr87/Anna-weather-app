@@ -15,7 +15,6 @@
     <title>Anna's Weather app</title>
   </head>
   <body>
-    <h1>London</h1>
     <div class="weather-app-wrapper">
       <div class="container">
         <div class="card">
@@ -40,9 +39,10 @@
                 </div>
               </div>
             </form>
-            <div id="icon">
-              <img src="#" alt="weather-icon" />
-              <strong>0</strong>
+            <h1>London</h1>
+            <div class="clearfix weather-temperature" id="icon">
+              <img src="" alt="weather-icon" />
+              <strong id="temperature">0</strong>
               <small>
                 <a href="#" id="celsius-link" class="active">˚C</a> |
                 <a href="#" id="frahrenheit-link" class="fahrenheit">˚F</a>
@@ -58,12 +58,26 @@
                   <li id="description">Cloudy</li>
                 </ul>
               </div>
+              <div class="col-6" id="info">
+                <ul>
+                  <li>
+                    Humidity:
+                    <span id="humidity">68</span>
+                    %
+                  </li>
+                  <li>
+                    Wind:
+                    <span id="windspeed">21</span>
+                    mph
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="weather-forecast" id="forecast">
               <div class="row">
                 <div class="col-2">
                   <div class="weather-forecast-day">Wed</div>
-                  <img src="#" alt="weather-icon" id="icon-forecast" />
+                  <img src="" alt="weather-icon" id="icon-forecast" />
                   <span class="weather-forecast-temperature-min"> 11˚ </span>
                   <span class="weather-forecast-temperature-max"> 13˚ </span>
                 </div>
@@ -72,7 +86,12 @@
           </div>
         </div>
         <div id="link-to-code">
-          <a href="" class="_blank"> Open-source code </a>
+          <a
+            href="https://github.com/avr87/Anna-weather-app.git"
+            target="_blank"
+          >
+            Open-source code
+          </a>
           by Anna van Ruiten
         </div>
       </div>
