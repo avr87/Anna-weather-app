@@ -10,10 +10,16 @@ body {
 .card {
   margin-bottom: 20px;
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid hwb(6 42% 29%);
   border-radius: 50px;
   box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.05);
   background-color: rgba(255, 159, 36);
+}
+
+#city-input {
+  color: rgb(181, 115, 108);
+  border-color: #b5736c;
+  box-shadow: rgb(181, 115, 108);
 }
 
 #search-button {
@@ -57,7 +63,7 @@ li:first-letter {
 }
 
 .weather-temperature small {
-  color: black;
+  color: #b5736c;
   display: inline;
   line-height: 22px;
   font-size: 16px;
@@ -73,10 +79,21 @@ li:first-letter {
 #info {
   text-align: right;
 }
+.celsius {
+  text-decoration: none;
+  color: #b5736c;
+}
 .fahrenheit {
   text-decoration: none;
+  color: #b5736c;
 }
-#celsius-link {
+
+.weather-temperature .active {
+  color: #ffefbc;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
   text-decoration: none;
 }
 
@@ -86,19 +103,18 @@ li:first-letter {
 }
 
 .weather-forecast-day {
-  color: #ffefbc;
-  opacity: 0.5;
+  color: white;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperature-min {
   font-size: 13px;
-  color: #ffefbc;
-  opacity: 0.5;
+  color: #b5736c;
 }
 
 .weather-forecast-temperature-max {
   font-size: 13px;
-  color: #ffefbc;
+  color: white;
 }
 #link-to-code {
   font-size: 12px;
