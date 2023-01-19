@@ -12,8 +12,8 @@ body {
   padding: 20px;
   border: 1px solid hwb(6 42% 29%);
   border-radius: 50px;
-  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.05);
-  background-color: rgba(255, 159, 36);
+  box-shadow: 1px 2px 3px 4px rgba(181, 115, 108, 0.4);
+  background-color: rgba(255, 159, 36, 0.9);
 }
 
 #city-input {
@@ -28,9 +28,9 @@ body {
   color: white;
 }
 h1 {
-  color: #ffefbc;
+  color: white;
   font-size: 38px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 29px;
   line-height: 48px;
   margin-bottom: 0;
@@ -54,7 +54,7 @@ li:first-letter {
   vertical-align: top;
 }
 .weather-temperature strong {
-  color: #ffefbc;
+  color: white;
   display: inline;
   font-size: 48px;
   line-height: 56px;
@@ -89,7 +89,7 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-  color: #ffefbc;
+  color: white;
   text-decoration: none;
 }
 
@@ -101,10 +101,15 @@ li:first-letter {
   margin-top: 30px;
   text-align: center;
 }
+#icon-forecast {
+  height: 60px;
+  width: 60px;
+}
 
 .weather-forecast-day {
   color: white;
-  opacity: 0.6;
+  opacity: 0.8;
+  padding-top: 20px;
 }
 
 .weather-forecast-temperature-min {
@@ -117,6 +122,10 @@ li:first-letter {
   color: white;
 }
 #link-to-code {
+  color: rgb(181, 115, 108);
   font-size: 12px;
   text-align: center;
+}
+.name {
+  color: rgb(181, 115, 108);
 }
