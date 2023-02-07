@@ -78,6 +78,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  displayCelsiusTemperature({ preventDefault: () => {} });
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -113,6 +114,8 @@ function searchedCity(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function displayFahrenheitTemperature(event) {
